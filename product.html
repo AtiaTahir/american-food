@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>American Food Menu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-900 text-white p-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold">American Food Co.</a>
+      <div class="space-x-4">
+        <a href="#home" class="hover:underline">Home</a>
+        <a href="#menu" class="hover:underline">Menu</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-cover bg-center h-96 text-white flex flex-col justify-center items-center" style="background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092');">
+    <h1 class="text-5xl font-bold mb-4 drop-shadow-lg">Taste the Heart of America</h1>
+    <p class="text-xl mb-6 drop-shadow-md">Burgers, BBQ, Pies & More – All in One Place!</p>
+    <a href="#menu" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full">Explore Menu</a>
+  </section>
+
+  <!-- Featured Products -->
+  <section id="menu" class="py-16 px-6 bg-white">
+    <h2 class="text-4xl font-bold text-center mb-10">Our Specialties</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      
+      <!-- Classic Cheeseburger -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="Classic Cheeseburger" class="w-full h-56 object-cover">
+        <div class="p-4">
+          <h3 class="text-2xl font-semibold mb-2">Classic Cheeseburger</h3>
+          <p class="text-gray-600 mb-4">Juicy grilled beef patty with cheddar cheese, lettuce, and tomato, served on a fresh bun.</p>
+          <span class="text-red-600 font-bold text-xl">$9.99</span>
+        </div>
+      </div>
+
+      <!-- BBQ Ribs -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1604079629735-13d5f3068b4b" alt="BBQ Ribs" class="w-full h-56 object-cover">
+        <div class="p-4">
+          <h3 class="text-2xl font-semibold mb-2">BBQ Ribs</h3>
+          <p class="text-gray-600 mb-4">Tender, slow-cooked ribs glazed with our signature BBQ sauce. A smoky, sweet treat!</p>
+          <span class="text-red-600 font-bold text-xl">$14.99</span>
+        </div>
+      </div>
+
+      <!-- Apple Pie -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1583321792809-82a5cb09b545" alt="Apple Pie" class="w-full h-56 object-cover">
+        <div class="p-4">
+          <h3 class="text-2xl font-semibold mb-2">Homemade Apple Pie</h3>
+          <p class="text-gray-600 mb-4">Freshly baked with a flaky crust and a sweet, spiced apple filling. A perfect dessert!</p>
+          <span class="text-red-600 font-bold text-xl">$5.49</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-gray-900 text-white py-6 mt-16">
+    <div class="max-w-7xl mx-auto text-center">
+      <p>&copy; 2025 American Food Co. All rights reserved.</p>
+      <p>Follow us: 
+        <a href="#" class="underline">Instagram</a> | 
+        <a href="#" class="underline">Facebook</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
