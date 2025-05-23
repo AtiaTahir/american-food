@@ -293,6 +293,7 @@
 }
 
   :root {
+    --pr-bg:black;
     --swiper-pagination-bullet-inactive-color: #2b3c53;
     --swiper-pagination-color: #2b3c53;
     /*--swiper-theme-color: #2b3c53;*/
@@ -329,6 +330,37 @@
       background-repeat: no-repeat;
       height: 100vh; /* Makes the section take up the full viewport height */
   }
+  /*section overview-end*/
+     /*section-subcription-strt*/
+     .subcription {
+     background-image: url('images/bg-pattern-07.jpg');
+      background-size: cover;
+      padding: 20rem 0 0 0;
+      text-align: center;
+      width: 100%;
+      max-width: 100%;
+      background-repeat: no-repeat;
+      height: 100vh; /* Makes the section take up the full viewport height */
+     }
+
+     button {
+   
+     font-size: 2rem;         
+     margin: 0.5rem 1rem;
+     border-radius: 0.7rem;
+     
+     }
+    .form-control {
+    padding: 0.5rem 2rem;         /* Bigger button */
+    font-size: 2rem;          /* Match input font */
+    border: none;
+  /*border-radius: 6px;*/
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+      /*section-subcription-end*/
+
   /* Promo page start*/
       .hero-title {
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -461,7 +493,7 @@
 }
 
 /* Footer / Contact Section */
-.footer {
+/*.footer {
   background-color: #2d3748;
   color: white;
   padding: 40px 20px;
@@ -484,4 +516,40 @@
 
 .footer-link:hover {
   color: #fff;
+}*/
+/*footer-start*/
+  .bg-primary {
+    background-color: var(--pr-bg);
+  }
+  .footer {
+    padding: 10rem 0 5rem;
+  }
+  .footer .col {
+    color: white;
+  }
+  .footer .col .col-about {
+     width: 30%;
+  }
+  .footer .col .col-quick-links {
+    width: 23.3%;
+  }
+ .footer .col .ul {
+  list-style: none;
+ }
+.footer .col ul li a {
+  color: white;
+  text-decoration: none;
+}
+.social-media-links {
+  display: flex;
+  gap: 1rem;
+}
+.social-media-links a {
+  background-color: white;
+  border-radius:100px;
+  width: 2.5rem;
+  height: 2.5rem;
+ display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
