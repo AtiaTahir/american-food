@@ -124,8 +124,21 @@
     color:#835e3f; 
     padding: 2rem 0 1rem o; /* Optional padding for better spacing */
   }
-  
    
+    @media (max-width: 768px) {
+      .intro-banner h1 {
+        font-size: 32px;
+      }
+
+      .intro-banner p {
+        font-size: 16px;
+      }
+
+      .order-now {
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+    }
     .founder-profile {
       background-image: url('images/bg-img_02.jpg');
       background-size: cover;
@@ -155,12 +168,18 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 3rem;
     }
-       @media (max-width: 576px) {
-        .grid {
-          grid-template-columns: 1fr;
-        }
-      }
+      @media (max-width: 768px) {
+  .founder-profile .grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns instead of 3 */
+     }
+    }
 
+    /* Mobile screens (up to 480px) */
+    @media (max-width: 480px) {
+      .founder-profile .grid {
+        grid-template-columns: 1fr; /* 1 column layout for small screens */
+      }
+    }
     /*section-purely-vegans-start*/
     .purely-vegans {
       background-image: url('images/bg-pattern-03.jpg');
@@ -188,6 +207,41 @@
       gap: 2rem;
        flex-wrap: wrap;
     }
+    /* Tablet screens (up to 768px) */
+@media (max-width: 768px) {
+  .purely-vegans .content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .purely-vegans .burger-img img {
+    max-width: 300px;
+  }
+
+  .purely-vegans .delicious-burger h3 {
+    font-size: 28px;
+    }
+  }
+
+    /* Mobile screens (up to 480px) */
+    @media (max-width: 480px) {
+      .purely-vegans {
+        padding: 40px 15px;
+      }
+
+      .purely-vegans .burger-img img {
+        max-width: 250px;
+      }
+
+      .purely-vegans .delicious-burger h3 {
+        font-size: 24px;
+      }
+
+      .purely-vegans .delicious-burger p {
+        font-size: 14px;
+      }
+    }
+
     
     /*section-purely-vegans-end*/
    /* section-healthy-food-start*/
@@ -212,6 +266,41 @@
     .healthy {
       flex: 1;
     }
+     /* Tablet screens (up to 768px) */
+@media (max-width: 768px) {
+  .healthy-food .content-wrapper {
+    flex-direction: column-reverse; /* image below text */
+    text-align: center;
+  }
+
+  .healthy-food .burger-img-2 img {
+    max-width: 300px;
+  }
+
+  .healthy-food .healthy h3 {
+    font-size: 28px;
+  }
+}
+
+/* Mobile screens (up to 480px) */
+  @media (max-width: 480px) {
+    .healthy-food {
+      padding: 40px 15px;
+    }
+
+    .healthy-food .burger-img-2 img {
+      max-width: 250px;
+    }
+
+    .healthy-food .healthy h3 {
+      font-size: 24px;
+    }
+
+    .healthy-food .healthy p {
+      font-size: 14px;
+    }
+    }
+
     /* section-healthy-food-end*/
 
     /*section-statistics-start*/
@@ -232,6 +321,46 @@
       border-radius: 50%;
       border: 3px solid #835e3f;
     }
+      /* Tablet screens (up to 768px) */
+@media (max-width: 768px) {
+  .section-statistic .grid {
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    gap: 20px;
+  }
+
+  .section-statistic h2 {
+    font-size: 28px;
+  }
+
+  .section-statistic p {
+    font-size: 14px;
+  }
+}
+
+/* Mobile screens (up to 480px) */
+    @media (max-width: 480px) {
+      .section-statistic .grid {
+        grid-template-columns: 1fr; /* 1 column */
+        gap: 15px;
+      }
+
+      .section-statistic h2 {
+        font-size: 24px;
+      }
+
+      .section-statistic p {
+        font-size: 13px;
+      }
+
+      .section-statistic .stat-card h3 {
+        font-size: 24px;
+      }
+
+      .section-statistic .stat-card p {
+        font-size: 12px;
+      }
+    }
+
     /*section-statistics-end*/
 
     /*section-popular-packages-start*/
@@ -307,28 +436,60 @@
     /*--swiper-theme-color: #2b3c53;*/
   }
 
-  .swiper-pagination-bullet {
-    opacity: 1;
-  }
+      .swiper-pagination-bullet {
+        opacity: 1;
+      }
 
-  .swiper-pagination-bullet-active {
-    transform: scale(2);
-  }
+      .swiper-pagination-bullet-active {
+        transform: scale(2);
+      }
 
-  .swiper-button-next, .swiper-button-prev, .swiper-pagination {
-    position: static;
-  }
+      .swiper-button-next, .swiper-button-prev, .swiper-pagination {
+        position: static;
+      }
 
-  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 0.5rem;
-  }
+      .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 0.5rem;
+      }
 
-  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-    width: auto;
-  }
+      .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        width: auto;
+      }
+     /* Tablet devices (up to 768px) */
+      @media (max-width: 768px) {
+        .popular-pakage .grid {
+          grid-template-columns: repeat(2, 1fr); /* 2 columns */
+          gap: 15px;
+        }
+      }
+
+      /* Mobile devices (up to 480px) */
+      @media (max-width: 480px) {
+        .popular-pakage .grid {
+          grid-template-columns: 1fr; /* 1 column - stack vertically */
+          gap: 10px;
+        }
+
+        .text-overlay h3 {
+          font-size: 16px;
+        }
+
+        .text-overlay h4 {
+          font-size: 14px;
+        }
+
+        .text-overlay p {
+          font-size: 12px;
+        }
+
+        .order-now {
+          padding: 8px 12px;
+          font-size: 14px;
+        }
+      }
 
   /*section overview*/
-  .overview {
+    .overview {
     background-image: url('images/bg-img-001.jpg');
       background-size: cover;
       padding: 10rem 0 ;
@@ -336,7 +497,37 @@
       width: 100%;
       max-width: 100%;
       background-repeat: no-repeat;
-  }
+    }
+            /* Tablet devices (up to 768px) */
+    @media (max-width: 768px) {
+      .overview {
+        padding: 40px 15px;
+      }
+
+      .overview p {
+        font-size: 16px;
+      }
+
+      .overview h2 {
+        font-size: 28px;
+      }
+    }
+
+    /* Mobile devices (up to 480px) */
+    @media (max-width: 480px) {
+      .overview {
+        padding: 30px 10px;
+      }
+
+      .overview p {
+        font-size: 14px;
+        line-height: 1.4;
+      }
+
+      .overview h2 {
+        font-size: 24px;
+      }
+    }
   /*section overview-end*/
      /*section-subcription-strt*/
      .subcription {
@@ -364,6 +555,54 @@
     color: white;
     cursor: pointer;
     transition: background-color 0.3s;
+    }
+      /* Tablet devices (up to 768px) */
+    @media (max-width: 768px) {
+      .subcription h2 {
+        font-size: 28px;
+      }
+
+      .subcription p {
+        font-size: 16px;
+      }
+
+      .subcription form {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .subcription form input.form-control {
+        width: 80%;
+        margin-bottom: 10px;
+      }
+
+      .subcription form button {
+        width: 50%;
+      }
+    }
+
+    /* Mobile devices (up to 480px) */
+    @media (max-width: 480px) {
+      .subcription {
+        padding: 40px 10px;
+      }
+
+      .subcription h2 {
+        font-size: 24px;
+      }
+
+      .subcription p {
+        font-size: 14px;
+      }
+
+      .subcription form input.form-control {
+        width: 100%;
+      }
+
+      .subcription form button {
+        width: 100%;
+        font-size: 16px;
+      }
     }
       /*section-subcription-end*/
 
@@ -581,3 +820,28 @@
     font-size: 1rem;
     margin-bottom: 2rem;
   }
+   @media (max-width: 768px) {
+  .footer {
+    padding: 40px 15px;
+  }
+
+  .footer .d-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer .col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer h4 {
+    font-size: 18px;
+  }
+
+  .footer p,
+  .footer ul {
+    font-size: 14px;
+  }
+}
+
